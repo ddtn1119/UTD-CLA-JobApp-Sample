@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We hope you can fill out this survey form so we can improve our services and your experience in freeCodeCamp better.</p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <div>
+        <label for="name" id="name-label">Full Name: <input id="name" name="name" type="text" placeholder="John Doe" required /></label>
+        </div>
+        <div>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="john.doe@gmail.com" required /></label>
+        </div>
+        <div>
+          <label for="number" id="number-label">Phone Number: <input id="number" name="number" type="number" placeholder="1234567890" min="1000000000" max="9999999999" required /></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Rating</legend>
+        <label for="dropdown">How did you rate us, from 1 to 5?
+          <select id="dropdown" name="rating">
+            <option value="">(select one)</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Not Good</option>
+            <option value="3">3 - OK</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Account Type (required)</legend>
+        <label for="student-account"><input id="student-account" type="radio" name="account-type" class="inline" value="student" checked /> Student</label>
+        <label for="educator-account"><input id="educator-account" type="radio" name="account-type" class="inline" value="educator" /> Educator</label>
+      </fieldset>
+      <fieldset>
+        <legend>Programming Skills</legend>
+        <label for="dropdown">Which programming languages and frameworks are you gaining at (or gaining knowledge from freeCodeCamp)?
+          <div>
+            <input class="inline" id="html" type="checkbox" name="html" value="html"> HTML
+            <input class="inline" id="css" type="checkbox" name="css" value="css"> CSS
+            <input class="inline" id="cpp" type="checkbox" name="cpp" value="cpp"> C/C++/C#
+            <input class="inline" id="java" type="checkbox" name="java" value="java"> Java
+            <input class="inline" id="js" type="checkbox" name="js" value="js"> JavaScript
+            <input class="inline" id="python" type="checkbox" name="python" value="python"> Python
+            <input class="inline" id="sql" type="checkbox" name="sql" value="sql"> SQL/MySQL/NoSQL
+            <input class="inline" id="others" type="checkbox" name="others" value="others"> Others
+          </div>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Additional comments:
+          <textarea id="comments" name="comments" rows="10" cols="30" placeholder="I love freeCodeCamp a lot!"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
