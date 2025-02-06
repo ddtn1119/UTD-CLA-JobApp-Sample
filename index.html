@@ -1,60 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">We hope you can fill out this survey form so we can improve our services and your experience in freeCodeCamp better.</p>
+    <meta charset="utf-8">
+    <img src="https://i.ytimg.com/vi/iVrMBefhhTY/maxresdefault.jpg" alt="UTD ECSS" width="100%" height="500">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title"> &#128187;Job Application - UTD Computing Lab Associate &#128187;</h1>
+    <p id="description">It is our policy to comply with all applicable state and federal laws prohibiting discrimination in employment based on race, age, color, sex,
+religion, national origin, disability or other protected classifications. Please carefully read and answer all questions. You will not be considered for employment if you fail to completely answer all the required questions
+on this application.</p>
   </head>
   <body>
     <form id="survey-form">
       <fieldset>
-        <legend>Basic Information</legend>
+        <legend><b>Job Description</b></legend>
+        <label for="job-description">
+          <p>The Computing Lab Associate (CLA) is a dynamic UT Dallas student who will be responsible for 
+          overseeing our computer science labs, 
+          enforcing the lab rules, making sure that the lab is kept clean at all times 
+          and foster a welcoming, supportive and collaborative lab environment. </p>
+          <p>The CLA will:</p>
+          <ul>
+            <li>patrol multiple labs to straighten chairs, organize & clean workstations, and keep the overall physical appearance of the lab up.</li>
+            <li>stock printer paper and markers, clear printer jams, replace toner, and report computing issues to the IT Team in a timely manner.</li>
+            <li>assist the student with simple workstation issues or reach out to the IT Team to help resolve a student's workstation issue as well as direct students to helpful learning resources.</li>
+            <li>kindly greet student, faculty, and staff when they enter the labs.</li>
+            <li>complete additional tasks assigned by the ECS IT Operations team.</li>
+          </ul>
+          <p>Students in this role should expect to work 16-20 hours per week during the long semesters. The selected candidates 
+          must be able to work four to five of the following shifts:</p>
+          <ul>
+            <li>Tuesday: 12pm-4pm</li>
+            <li>Wednesday: 12pm-4pm</li>
+            <li>Thursday: 12pm-4pm</li>
+            <li>Friday: 12pm-4pm</li>
+            <li>Sunday: 11am-3pm</li>
+          </ul>
+          <p>The CLA must show evidence of skills and knowledge in the following areas: Computer Basics,
+          Computer Programming, Creative Design, Research, Problem-Solving, and Critical Thinking</p>
+          <p>The CLA must also:</p>
+          <ul>
+            <li>have excellent communication skills, written and verbal.</li>
+            <li>effectively follow instructions.</li>
+            <li>pay close attention to details.</li>
+            <li>effectively work independently and in a team environment.</li>
+            <li>be willing to learn new skills.</li>
+            <li>be able to effectively multitask at any given time.</li>
+            <li><b>beat</b> not just meet scheduled deadlines.</li>
+            <li>be proficient in MS Windows 10 and 11.</li>
+            <li>be proficient in one or more programming languages: Java, C, C++, JavaScript, Python, etc.</li>
+            <li>be familiar with Windows CLI or PowerShell.</li>
+            <li>be proficient in MS Office Applications (Word, Excel, PowerPoint), both desktop and online.</li>
+            <li>be familiar with virtual machines, VirtualBox or VMWare.</li>
+          </ul>
+          <p>Pay rate: <b>$12.00/hour</b>.</p>
+          <p>All student employees can work up to 20 hours per week.</p>
+          <p>Your resume, transcript, and class schedule are required to be considered for this position. You can also attach a cover letter if possible.</p>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend><b>Basic Information</b></legend>
         <div>
-        <label for="name" id="name-label">Full Name: <input id="name" name="name" type="text" placeholder="John Doe" required /></label>
+        <label for="name" id="name-label">Full Legal Name: <input id="name" name="name" type="text" placeholder="John Doe" required /></label>
         </div>
         <div>
-        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="john.doe@gmail.com" required /></label>
+        <label for="name" id="name-label">Preferred Name: <input id="name" name="name" type="text" placeholder="John Doe" /></label>
+        </div>
+        <div>
+        <label for="email" id="email-label">UTD Email Address: <input id="email" name="email" type="email" placeholder="john.doe@utdallas.edu" required /></label>
         </div>
         <div>
           <label for="number" id="number-label">Phone Number: <input id="number" name="number" type="number" placeholder="1234567890" min="1000000000" max="9999999999" required /></label>
         </div>
       </fieldset>
       <fieldset>
-        <legend>Rating</legend>
-        <label for="dropdown">How did you rate us, from 1 to 5?
-          <select id="dropdown" name="rating">
-            <option value="">(select one)</option>
-            <option value="1">1 - Poor</option>
-            <option value="2">2 - Not Good</option>
-            <option value="3">3 - OK</option>
-            <option value="4">4 - Good</option>
-            <option value="5">5 - Excellent</option>
-          </select>
-        </label>
+        <legend><b>Classification</b></legend>
+        <label for="classification"><u>Note</u>: You must be a current UTD student to be considered for this position.<br><br>
+        What is your current classification?</label>
+        <div>
+          <label for="student-class"><input id="student-class" type="radio" name="class-type" class="inline" value="freshman" required /> Freshman (0-30 credit hours)</label><br>
+          <label for="student-class"><input id="student-class" type="radio" name="class-type" class="inline" value="sophomore" required/> Sophomore (30-53 credit hours)</label><br>
+          <label for="student-class"><input id="student-class" type="radio" name="class-type" class="inline" value="junior" required/> Junior (54-89 credit hours)</label><br>
+          <label for="student-class"><input id="student-class" type="radio" name="class-type" class="inline" value="senior" required/> Senior (90+ credit hours)</label><br>
+        </div>
       </fieldset>
       <fieldset>
-        <legend>Account Type (required)</legend>
-        <label for="student-account"><input id="student-account" type="radio" name="account-type" class="inline" value="student" checked /> Student</label>
-        <label for="educator-account"><input id="educator-account" type="radio" name="account-type" class="inline" value="educator" /> Educator</label>
+        <legend><b>Work Authorization</b></legend>
+        <label for="work-authorization">You must obtain a work authorization when you are hired for this position. 
+        Have you obtained or will you be able to obtain work authorization?</label><br>
+        <label for="authorization-check"><input id="authorization-check" type="radio" name="authorization-answer" class="inline" value="yes" required/> Yes</label>
+        <label for="authorization-check"><input id="authorization-check" type="radio" name="authorization-answer" class="inline" value="no" /> No</label>
       </fieldset>
       <fieldset>
-        <legend>Programming Skills</legend>
-        <label for="dropdown">Which programming languages and frameworks are you gaining at (or gaining knowledge from freeCodeCamp)?
-          <div>
-            <input class="inline" id="html" type="checkbox" name="html" value="html"> HTML
-            <input class="inline" id="css" type="checkbox" name="css" value="css"> CSS
-            <input class="inline" id="cpp" type="checkbox" name="cpp" value="cpp"> C/C++/C#
-            <input class="inline" id="java" type="checkbox" name="java" value="java"> Java
-            <input class="inline" id="js" type="checkbox" name="js" value="js"> JavaScript
-            <input class="inline" id="python" type="checkbox" name="python" value="python"> Python
-            <input class="inline" id="sql" type="checkbox" name="sql" value="sql"> SQL/MySQL/NoSQL
-            <input class="inline" id="others" type="checkbox" name="others" value="others"> Others
-          </div>
-        </label>
-      </fieldset>
-      <fieldset>
-        <label for="comments">Additional comments:
-          <textarea id="comments" name="comments" rows="10" cols="30" placeholder="I love freeCodeCamp a lot!"></textarea>
-        </label>
+        <legend><b>Resume, Cover Letter, and Additional Documents</b></legend>
+        <label for="documents-note"><u>Note</u>: Please attach your resume, cover letter, and transcript in .pdf or .docx only. All other file types will not be accepted. Your class schedule can be an image file.</label><br><br>
+        <label for="myresume">Please attach your resume:</label><br>
+        <input type="file" id="myresume" name="myresume" accept=".pdf, .docx" required><br><br>
+        <label for="mytranscript">Please attach your transcript:</label><br>
+        <input type="file" id="mytranscript" name="mytranscript" accept=".pdf, .docx" required><br><br>
+        <label for="myschedule">Please attach your class schedule:</label><br>
+        <input type="file" id="myschedule" name="myschedule" accept=".pdf, .docx, .png, .jpg, .jpeg" required><br><br>
+        <label for="mycoverletter">Please attach your cover letter:</label><br>
+        <input type="file" id="mycoverletter" name="mycoverletter" accept=".pdf, .docx"><br><br>
       </fieldset>
       <input id="submit" type="submit" value="Submit" />
     </form>
